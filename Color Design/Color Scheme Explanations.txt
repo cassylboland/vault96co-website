@@ -1,0 +1,26 @@
+Complementary
+Two colors that are on opposite sides of the color wheel. This combination provides a high contrast and high impact color combination – together, these colors will appear brighter and more prominent.
+
+Monochromatic
+Three shades, tones and tints of one base color. Provides a subtle and conservative color combination. This is a versatile color combination that is easy to apply to design projects for a harmonious look.
+
+Analogous
+Three colors that are side by side on the color wheel. This color combination is versatile, but can be overwhelming. To balance an analogous color scheme, choose one dominant color, and use the others as accents.
+
+Triadic
+Three colors that are evenly spaced on the color wheel. This provides a high contrast color scheme, but less so than the complementary color combination — making it more versatile. This combination creates bold, vibrant color palettes.
+
+Tetradic
+Four colors that are evenly spaced on the color wheel. Tetradic color schemes are bold and work best if you let one color be dominant, and use the others as accents. The more colors you have in your palette, the more difficult it is to balance,
+
+Primary colors in the RGB color wheel are the colors that, added together, create pure white light. These colors are red, green and blue.
+
+In the RYB color wheel, primary colors are colors that can’t be mixed from other colors. There are three primary colors: red, yellow, and blue.
+
+Secondary colors are colors that result from mixing two primary colors. There are three secondary colors. In the RGB color wheel, these are cyan, magenta and yellow. When you mix light, red and green make yellow, green and blue make cyan, and blue and red make magenta.
+
+In the RYB color wheel, the secondary colors are purple (red mixed with blue), orange (red mixed with yellow), and green (yellow mixed with blue).
+
+Tertiary colors are colors made by combining a secondary color with a primary color. There are six tertiary colors. In the RGB color wheel these are orange, chartreuse green, spring green, azure, violet and rose.
+
+In the RYB color wheel, the tertiary colors are red-orange, yellow-orange, yellow-green, blue-green, blue-violet, and red-violet.

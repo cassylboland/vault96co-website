@@ -1,0 +1,102 @@
+.inline-block{
+    display: inline-block;
+    vertical-align: top;
+}
+/*Header*/
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000000;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+.sitetitle{
+    padding: 0px 0px;
+    color:white;
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+}
+body{
+    display: grid;
+    background-color: beige;
+    background-attachment: fixed;
+}
+h2{
+    font-size: 50px;
+}
+h4{
+    font-size: 30px;
+}
+/*Nav Bar*/
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: beige;
+    overflow: hidden;
+    border-style: solid;
+    border-color: silver;
+    border-width: 3px;
+    border-left-color: rgb(0,0,0,0);
+    border-right-color: rgb(0,0,0,0);
+}
+nav a{
+    float: left;
+    color: gold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+nav a:hover{
+    background-color: rgb(192, 255, 2);
+    color: black;
+}
+nav a.active{
+    background-color: whitesmoke;
+    color: rgb(198, 23, 23);
+}
+
+/*Hero Section
+.heroContainer{
+}*/
+.heroTitle{
+    color: rgb(131, 76, 76);
+    font-size: 50px;
+    text-align: center;
+}
+.heroText{
+    color: rgb(172, 42, 42);
+    font-size: 30px;
+}
+.qanda{
+    margin-left: 10px;
+    margin-bottom: 25px;
+}
+#q1{display:none;}
+#q2{display:none;}
+
+
+/*Footer*/
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #6f6f71;
+    overflow: hidden;
+    padding: 20px;
+}
+footer a{
+    color: gold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+footer a:hover{
+    background-color: rgb(192, 255, 2);
+    color: black;
+}
+footer a.active{
+    background-color: whitesmoke;
+    color: rgb(198, 23, 23);
+}

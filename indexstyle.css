@@ -1,0 +1,374 @@
+.inline-block{
+    display: inline-block;
+    vertical-align: top;
+}
+/*Header*/
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000000;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+h2{
+    font-size: 50px;
+}
+h4{
+    font-size: 30px;
+}
+.exclusiveText{
+    position: relative;
+    left:30px;
+}
+.sitetitle{
+    padding: 0px 0px;
+    color:white;
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+}
+body{
+    display: grid;
+    background-color: beige;
+    background-attachment: fixed;
+    overflow-x:hidden;
+}
+.center{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+/*Nav Bar*/
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: beige;
+    overflow: hidden;
+    border-style: solid;
+    border-color: silver;
+    border-width: 3px;
+    border-left-color: rgb(0,0,0,0);
+    border-right-color: rgb(0,0,0,0);
+}
+nav a{
+    float: left;
+    color: gold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+nav a:hover{
+    background-color: rgb(192, 255, 2);
+    color: black;
+}
+nav a.active{
+    background-color: whitesmoke;
+    color: rgb(198, 23, 23);
+}
+/*Hero Section*/
+.heroContainer{
+    flex-wrap: wrap;
+    padding-left: clamp(150px, 34%, 1000px);
+}
+.heroTitle{
+    color: whitesmoke;
+    inline-size: 530px;
+    font-size: 60px;
+}
+.heroText{
+    color: whitesmoke;
+    font-size: 30px;
+    width: 600px;
+}
+.welcomeText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    padding: 25px;
+}
+/*Slideshow*/
+* {box-sizing: border-box}
+
+.slideshow-container{
+    max-width: 1500px;
+    max-height: 300px;
+    position: relative;
+    margin: auto;
+    background-color: black;
+    overflow: hidden;
+}
+.mySlides{
+    display: none;
+}
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+.text{
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align:left;
+}
+.numbertext{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover{
+    background-color: #717171;
+}
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
+
+/*Cards*/
+.exclusiveSection{
+    display: flex;
+    flex-direction:row;
+    overflow:auto;
+    white-space:nowrap;
+    padding:5px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    max-height: 350px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    border-radius: 50px;
+    background-color: gray;
+  }
+  .card img{
+    max-width: 537px;
+    max-height: 560px;
+    overflow:hidden
+  }
+
+  .description{
+    margin-left:2%;
+    margin-right:2%;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+  /*Purse Category Block*/
+.block{
+    display:block;
+}
+.purseCategoriesBlock{
+    display:block;
+    width:100%;
+    border:none;
+    background-color: green;
+    padding: 50px 28px;
+    font-size:16px;
+    cursor:pointer;
+    text-align:center;
+    border-style: solid;
+    border-width: 4px;
+}
+.purseCategoriesBlock:hover{
+    background-color: lightgreen;
+    color:white;
+}
+.purseProducts{
+    display: flex;
+    flex-direction:row;
+    overflow:auto;
+    white-space:nowrap;
+    padding:5px;
+}
+
+.purseCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    max-height: 800px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: gray;
+  }
+
+  .purseCard img{
+    max-width: 537px;
+    max-height: 560px;
+    overflow:hidden
+  }
+  
+  .pursePrice {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .purseCard button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    bottom: 0px;
+  }
+  
+  .purseCard button:hover {
+    opacity: 0.7;
+  }
+
+/*Glass Category Block*/
+.glassCategoriesBlock{
+    display:block;
+    width:100%;
+    border:none;
+    background-color: green;
+    padding: 50px 28px;
+    font-size:16px;
+    cursor:pointer;
+    text-align:center;
+    border-style: solid;
+    border-width: 4px;
+}
+.glassCategoriesBlock:hover{
+    background-color: lightgreen;
+    color:white;
+}
+.glassProducts{
+    display: flex;
+    flex-direction:row;
+    overflow:auto;
+    white-space:nowrap;
+    padding:5px;
+}
+
+.glassCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    max-height: 800px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: gray;
+  }
+
+  .glassCard img{
+    max-width: 537px;
+    max-height: 560px;
+    overflow:hidden
+  }
+  
+  .glassPrice {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .glassCard button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    bottom: 0px;
+  }
+  
+  .glassCard button:hover {
+    opacity: 0.7;
+  }
+
+
+/*Footer*/
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #6f6f71;
+    overflow: hidden;
+    padding: 20px;
+}
+footer a{
+    color: gold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+footer a:hover{
+    background-color: rgb(192, 255, 2);
+    color: black;
+}
+footer a.active{
+    background-color: whitesmoke;
+    color: rgb(198, 23, 23);
+}
