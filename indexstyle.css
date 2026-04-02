@@ -1,374 +1,165 @@
-.inline-block{
-    display: inline-block;
-    vertical-align: top;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-/*Header*/
-.header{
+
+body {
+    background: #ececec;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.page-wrapper {
+    width: min(1100px, 96%);
+    margin: 14px auto;
+}
+
+.home-card {
+    background: #a8a8f3;
+    border-radius: 34px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+    padding: 18px 18px 28px;
+    min-height: 96vh;
+}
+
+.top-row {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #00000000;
-    padding-top: 0%;
-    padding-bottom: 0%;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 30px;
 }
-h2{
-    font-size: 50px;
+
+.logo {
+    font-family: Impact, Haettenschweiler, 'Koulen', sans-serif;
+    font-size: clamp(3.5rem, 7vw, 5.8rem);
+    line-height: 0.9;
+    color: #f8f8f4;
+    text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.18);
+    margin-top: 6px;
+    margin-left: 8px;
 }
-h4{
-    font-size: 30px;
-}
-.exclusiveText{
-    position: relative;
-    left:30px;
-}
-.sitetitle{
-    padding: 0px 0px;
-    color:white;
-    font-family: 'Cinzel', serif;
-    font-size: 20px;
-}
-body{
-    display: grid;
-    background-color: beige;
-    background-attachment: fixed;
-    overflow-x:hidden;
-}
-.center{
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-/*Nav Bar*/
-nav{
+
+.top-nav {
     display: flex;
-    justify-content: space-evenly;
-    background-color: beige;
-    overflow: hidden;
-    border-style: solid;
-    border-color: silver;
-    border-width: 3px;
-    border-left-color: rgb(0,0,0,0);
-    border-right-color: rgb(0,0,0,0);
-}
-nav a{
-    float: left;
-    color: gold;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-nav a:hover{
-    background-color: rgb(192, 255, 2);
-    color: black;
-}
-nav a.active{
-    background-color: whitesmoke;
-    color: rgb(198, 23, 23);
-}
-/*Hero Section*/
-.heroContainer{
+    gap: 20px;
     flex-wrap: wrap;
-    padding-left: clamp(150px, 34%, 1000px);
-}
-.heroTitle{
-    color: whitesmoke;
-    inline-size: 530px;
-    font-size: 60px;
-}
-.heroText{
-    color: whitesmoke;
-    font-size: 30px;
-    width: 600px;
-}
-.welcomeText{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
-    padding: 25px;
-}
-/*Slideshow*/
-* {box-sizing: border-box}
-
-.slideshow-container{
-    max-width: 1500px;
-    max-height: 300px;
-    position: relative;
-    margin: auto;
-    background-color: black;
-    overflow: hidden;
-}
-.mySlides{
-    display: none;
-}
-.prev, .next{
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-.next{
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-.prev:hover, .next:hover{
-    background-color: rgba(0,0,0,0.8);
-}
-.text{
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align:left;
-}
-.numbertext{
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-.dot{
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-.active, .dot:hover{
-    background-color: #717171;
-}
-.fade{
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-@keyframes fade{
-    from {opacity: .4}
-    to {opacity: 1}
-}
-@media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
+    margin-top: 10px;
+    margin-right: 12px;
 }
 
-/*Cards*/
-.exclusiveSection{
-    display: flex;
-    flex-direction:row;
-    overflow:auto;
-    white-space:nowrap;
-    padding:5px;
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    max-height: 350px;
-    margin: auto;
-    text-align: center;
-    font-family: arial;
-    border-radius: 50px;
-    background-color: gray;
-  }
-  .card img{
-    max-width: 537px;
-    max-height: 560px;
-    overflow:hidden
-  }
-
-  .description{
-    margin-left:2%;
-    margin-right:2%;
-  }
-  
-  .price {
-    color: grey;
-    font-size: 22px;
-  }
-  
-  .card button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-  }
-  
-  .card button:hover {
-    opacity: 0.7;
-  }
-  /*Purse Category Block*/
-.block{
-    display:block;
-}
-.purseCategoriesBlock{
-    display:block;
-    width:100%;
-    border:none;
-    background-color: green;
-    padding: 50px 28px;
-    font-size:16px;
-    cursor:pointer;
-    text-align:center;
-    border-style: solid;
-    border-width: 4px;
-}
-.purseCategoriesBlock:hover{
-    background-color: lightgreen;
-    color:white;
-}
-.purseProducts{
-    display: flex;
-    flex-direction:row;
-    overflow:auto;
-    white-space:nowrap;
-    padding:5px;
-}
-
-.purseCard {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    max-height: 800px;
-    height: 500px;
-    margin: auto;
-    text-align: center;
-    font-family: arial;
-    background-color: gray;
-  }
-
-  .purseCard img{
-    max-width: 537px;
-    max-height: 560px;
-    overflow:hidden
-  }
-  
-  .pursePrice {
-    color: grey;
-    font-size: 22px;
-  }
-  
-  .purseCard button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-    bottom: 0px;
-  }
-  
-  .purseCard button:hover {
-    opacity: 0.7;
-  }
-
-/*Glass Category Block*/
-.glassCategoriesBlock{
-    display:block;
-    width:100%;
-    border:none;
-    background-color: green;
-    padding: 50px 28px;
-    font-size:16px;
-    cursor:pointer;
-    text-align:center;
-    border-style: solid;
-    border-width: 4px;
-}
-.glassCategoriesBlock:hover{
-    background-color: lightgreen;
-    color:white;
-}
-.glassProducts{
-    display: flex;
-    flex-direction:row;
-    overflow:auto;
-    white-space:nowrap;
-    padding:5px;
-}
-
-.glassCard {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    max-height: 800px;
-    height: 500px;
-    margin: auto;
-    text-align: center;
-    font-family: arial;
-    background-color: gray;
-  }
-
-  .glassCard img{
-    max-width: 537px;
-    max-height: 560px;
-    overflow:hidden
-  }
-  
-  .glassPrice {
-    color: grey;
-    font-size: 22px;
-  }
-  
-  .glassCard button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-    bottom: 0px;
-  }
-  
-  .glassCard button:hover {
-    opacity: 0.7;
-  }
-
-
-/*Footer*/
-footer{
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #6f6f71;
-    overflow: hidden;
-    padding: 20px;
-}
-footer a{
-    color: gold;
-    text-align: center;
-    padding: 14px 16px;
+.top-nav a {
+    color: #f8f8f4;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 0.9rem;
+    font-weight: 700;
 }
-footer a:hover{
-    background-color: rgb(192, 255, 2);
-    color: black;
+
+.top-nav a:hover {
+    opacity: 0.8;
 }
-footer a.active{
-    background-color: whitesmoke;
-    color: rgb(198, 23, 23);
+
+.products-preview h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    color: #f8f8f4;
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.18);
+    margin: 20px 0 34px 14px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 38px 26px;
+    padding: 0 14px;
+}
+
+.category-item {
+    text-decoration: none;
+    color: #f8f8f4;
+    text-align: center;
+}
+
+.category-box {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: #d8d8f7;
+    border-radius: 26px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+    margin-bottom: 10px;
+}
+
+.category-item p {
+    font-family: Georgia, serif;
+    font-size: clamp(1.2rem, 2vw, 1.7rem);
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.custom-callout {
+    text-align: center;
+    margin-top: 56px;
+    padding-bottom: 12px;
+}
+
+.custom-callout p {
+    font-family: Georgia, serif;
+    font-size: clamp(1.3rem, 2.2vw, 2rem);
+    font-weight: 700;
+    color: #f8f8f4;
+    margin-bottom: 10px;
+}
+
+.click-text {
+    color: #f8f8f4;
+}
+
+.arrow {
+    color: #5e55ff;
+    font-size: 1.3em;
+}
+
+.custom-btn {
+    display: inline-block;
+    margin-top: 8px;
+    min-width: 340px;
+    background: #d8d8f7;
+    color: #f8f8f4;
+    text-decoration: none;
+    font-family: Georgia, serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 14px 28px;
+    border-radius: 999px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+}
+
+.custom-btn:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 850px) {
+    .top-row {
+        flex-direction: column;
+    }
+
+    .top-nav {
+        margin-left: 10px;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 560px) {
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .custom-btn {
+        min-width: 0;
+        width: 100%;
+    }
 }
