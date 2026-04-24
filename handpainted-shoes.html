@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vault 96 Co. | PAGE NAME</title>
+    <title>Vault 96 Co. | Handpainted Shoes</title>
     <link rel="stylesheet" href="site.css">
 </head>
 <body>
@@ -11,28 +11,43 @@
         <section class="page-card">
             <div class="top-row">
                 <a href="index.html" class="logo-link">VAULT 96<br>CO.</a>
+
                 <nav class="top-nav">
                     <a href="products.html">shop</a>
                     <a href="about.html">about us</a>
                     <a href="contact.html">contact us</a>
                     <a href="custom-order.html">custom order form</a>
+                    <a href="previous-works.html">previous works</a>
+                    <a href="cart.html">cart <span id="cart-count" class="cart-count">0</span></a>
                 </nav>
             </div>
 
-            <p class="page-label">PAGE NAME LOWERCASE</p>
+            <p class="page-label">handpainted shoes</p>
 
             <section class="content-card product-detail-box">
-                <div class="product-placeholder"></div>
-                <h2>PAGE NAME</h2>
-                <p>Write a short description here.</p>
-                <p>Add customization or product details here.</p>
+                <img src="images/shoe3.png" alt="Handpainted Shoes" class="product-placeholder">
+                <h2>Handpainted Shoes</h2>
+                <p>Custom painted shoes designed with themed artwork, color palettes, and personalized details.</p>
+                <p>Great for statement pieces, gifts, fandom themes, and wearable custom art.</p>
+                <p style="font-weight:700; color:#6e6bf0;">$45.00</p>
 
                 <div class="button-row">
-                    <a href="custom-order.html" class="main-btn">Customize This Product</a>
-                    <a href="products.html" class="main-btn light">Back to Shop</a>
+                    <button
+                        class="main-btn add-to-cart-btn"
+                        data-id="handpainted-shoes"
+                        data-name="Handpainted Shoes"
+                        data-price="45"
+                        data-description="Custom handpainted shoes with personalized designs."
+                    >
+                        Add to Cart
+                    </button>
+
+                    <a href="custom-order.html" class="main-btn light">Customize This Product</a>
                 </div>
             </section>
         </section>
     </main>
+
+    <script src="site.js"></script>
 </body>
 </html>
