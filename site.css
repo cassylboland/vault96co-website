@@ -31,14 +31,36 @@ body {
     margin-bottom: 24px;
 }
 
-.logo {
+
+.logo-link {
+    text-decoration: none;
+    display: inline-block;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: clamp(3.5rem, 7vw, 5.8rem);
+    font-size: clamp(2.4rem, 5vw, 4rem);
     line-height: 0.9;
     color: #f8f8f4;
     text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.18);
     margin-top: 6px;
     margin-left: 8px;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.logo-link:visited,
+.logo-link:active {
+    color: #f8f8f4;
+    text-decoration: none;
+}
+
+.logo-link:hover {
+    color: #d1d1e8;
+    text-decoration: none;
+    transform: translateY(1px);
+}
+
+.logo-link:hover {
+    text-decoration: none;
+    color: #c6c6ee;
+    transform: translateY(1px);
 }
 
 .top-nav {
