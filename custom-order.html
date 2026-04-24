@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vault 96 Co. | Custom Order Form</title>
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+    <main class="page-wrapper">
+        <section class="page-card">
+            <div class="top-row">
+                <h1 class="logo">VAULT 96<br>CO.</h1>
+                <nav class="top-nav">
+                    <a href="products.html">shop</a>
+                    <a href="about.html">about us</a>
+                    <a href="contact.html">contact us</a>
+                    <a href="custom-order.html" class="active">custom order form</a>
+                </nav>
+            </div>
+
+            <p class="page-label">custom order form</p>
+
+            <section class="content-card">
+                <h2>Custom Order Form</h2>
+                <p>Fill this out with your product choice and design details.</p>
+
+                <form class="form-stack">
+                    <div class="form-group">
+                        <label>What product would you like to custom order?</label>
+                        <div class="radio-row">
+                            <label><input type="radio" name="product"> wine glass</label>
+                            <label><input type="radio" name="product"> shoes</label>
+                            <label><input type="radio" name="product"> friendship bracelet keychain</label>
+                            <label><input type="radio" name="product"> friendship bracelet</label>
+                            <label><input type="radio" name="product"> friendship necklace</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="details">Describe your custom order</label>
+                        <textarea id="details" name="details" placeholder="Colors, names, theme, charms, inspiration, and any other details..."></textarea>
+                    </div>
+
+                    <div class="two-column">
+                        <div class="form-group">
+                            <label for="customer-name">Your Name</label>
+                            <input type="text" id="customer-name" name="customer-name" placeholder="Your name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="customer-email">Your Email</label>
+                            <input type="email" id="customer-email" name="customer-email" placeholder="Your email">
+                        </div>
+                    </div>
+
+                    <div class="button-row" style="justify-content: flex-start;">
+                        <button type="submit" class="main-btn">Submit Custom Request</button>
+                    </div>
+                </form>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

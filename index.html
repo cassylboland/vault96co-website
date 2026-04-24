@@ -1,75 +1,149 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Vault96Co</title>
-        <meta name="keywords" content="Vault, Vault96, 96, art, handpainted, exclusive">
-        <meta name="description" content="Official Vault96Co Website">
-        <meta name="author" content="John Doe">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vault 96 Co.</title>
+    <link rel="stylesheet" href="site.css">
+    <style>
+        .home-title {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: clamp(3rem, 6vw, 5rem);
+            color: #f8f8f4;
+            text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.18);
+            margin: 18px 0 26px 14px;
+        }
 
-        <link rel="stylesheet" href="indexstyle.css">
-        <script src="Scripts/homeslidejava.js"></script>
+        .home-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 34px 22px;
+            width: min(1080px, 95%);
+            margin: 0 auto;
+        }
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
-    </head>
+        .home-category {
+            text-decoration: none;
+            color: #f8f8f4;
+            text-align: center;
+        }
 
-    <body>
-        <main class="page-wrapper">
-            <section class="home-card">
-                <div class="top-row">
-                    <h1 class="logo">VAULT 96<br>CO.</h1>
+        .home-category-box {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            background: #d8d8f7;
+            border-radius: 26px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+            margin-bottom: 10px;
+        }
 
-                    <nav class="top-nav">
-                        <a href="products.html">shop</a>
-                        <a href="about.html">about us</a>
-                        <a href="contact.html">contact us</a>
-                        <a href="custom-order.html">custom order form</a>
-                    </nav>
-                </div>
+        .home-category h3 {
+            font-family: Georgia, serif;
+            font-size: clamp(1.25rem, 2vw, 1.65rem);
+            line-height: 1.1;
+        }
 
-                <section class="products-preview">
-                    <h2>SHOP OUR PRODUCTS</h2>
+        .custom-callout {
+            text-align: center;
+            margin-top: 54px;
+            padding-bottom: 6px;
+        }
 
-                    <div class="category-grid">
-                        <a href="products.html" class="category-item">
-                            <div class="category-box"></div>
-                            <p>Keychain Friendship Bracelet</p>
-                        </a>
+        .custom-callout p {
+            font-family: Georgia, serif;
+            font-size: clamp(1.3rem, 2.2vw, 2rem);
+            font-weight: 700;
+            color: #f8f8f4;
+            margin-bottom: 10px;
+        }
 
-                        <a href="products.html" class="category-item">
-                            <div class="category-box"></div>
-                            <p>Handpainted Glasses</p>
-                        </a>
+        .custom-callout .arrow-line {
+            color: #f8f8f4;
+        }
 
-                        <a href="products.html" class="category-item">
-                            <div class="category-box"></div>
-                            <p>Friendship Bracelets &amp; Necklaces</p>
-                        </a>
+        .custom-callout .arrow {
+            color: #5e55ff;
+            font-size: 1.3em;
+        }
 
-                        <a href="products.html" class="category-item">
-                            <div class="category-box"></div>
-                            <p>Handpainted Shoes</p>
-                        </a>
+        .custom-btn-home {
+            display: inline-block;
+            margin-top: 10px;
+            min-width: 340px;
+        }
 
-                        <a href="products.html" class="category-item">
-                            <div class="category-box"></div>
-                            <p>Shrinky Dink Keychains</p>
-                        </a>
+        @media (max-width: 850px) {
+            .home-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
 
-                        <a href="products.html" class="category-item">
-                            <div class="category-box"></div>
-                            <p>Phone Charms</p>
-                        </a>
-                    </div>
-                </section>
+        @media (max-width: 560px) {
+            .home-grid {
+                grid-template-columns: 1fr;
+            }
 
-                <section class="custom-callout">
-                    <p>Want to customize any of these products?</p>
-                    <p class="click-text">Click Below!</p>
-                    <a href="custom-order.html" class="custom-btn">Custom Order Form</a>
-                </section>
+            .custom-btn-home {
+                min-width: 0;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="page-wrapper">
+        <section class="page-card">
+            <div class="top-row">
+                <h1 class="logo">VAULT 96<br>CO.</h1>
+
+                <nav class="top-nav">
+                    <a href="products.html">shop</a>
+                    <a href="about.html">about us</a>
+                    <a href="contact.html">contact us</a>
+                    <a href="custom-order.html">custom order form</a>
+                </nav>
+            </div>
+
+            <h2 class="home-title">SHOP OUR PRODUCTS</h2>
+
+            <section class="home-grid">
+                <a href="keychain-friendship-bracelet.html" class="home-category">
+                    <div class="home-category-box"></div>
+                    <h3>Keychain Friendship Bracelet</h3>
+                </a>
+
+                <a href="handpainted-glasses.html" class="home-category">
+                    <div class="home-category-box"></div>
+                    <h3>Handpainted Glasses</h3>
+                </a>
+
+                <a href="friendship-bracelets-necklaces.html" class="home-category">
+                    <div class="home-category-box"></div>
+                    <h3>Friendship Bracelets &amp; Necklaces</h3>
+                </a>
+
+                <a href="handpainted-shoes.html" class="home-category">
+                    <div class="home-category-box"></div>
+                    <h3>Handpainted Shoes</h3>
+                </a>
+
+                <a href="shrinky-dink-keychains.html" class="home-category">
+                    <div class="home-category-box"></div>
+                    <h3>Shrinky Dink Keychains</h3>
+                </a>
+
+                <a href="phone-charms.html" class="home-category">
+                    <div class="home-category-box"></div>
+                    <h3>Phone Charms</h3>
+                </a>
             </section>
-        </main>
-    </body>
+
+            <section class="custom-callout">
+                <p>Want to customize any of these products?</p>
+                <p class="arrow-line">Click Below! <span class="arrow">↘</span></p>
+                <a href="custom-order.html" class="main-btn light custom-btn-home">Custom Order Form</a>
+            </section>
+        </section>
+    </main>
+</body>
 </html>
